@@ -1,21 +1,24 @@
 ﻿<Properties StartupConfiguration="{09A1E196-DA80-4349-8571-C034A610366A}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Matevo/Hubs/GameHub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Matevo/Controllers/TestAutoMapperController.cs" Line="1" Column="1" />
-      <File FileName="Matevo/Controllers/GradeController.cs" Line="1" Column="1" />
-      <File FileName="Matevo/Hubs/GameHub.cs" Line="33" Column="31" />
+      <File FileName="appsettings.Development.json" Line="11" Column="171" />
+      <File FileName="appsettings.Production.json" Line="14" Column="170" />
+      <File FileName="appsettings.Staging.json" Line="14" Column="171" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/VF/CustomAttribute/HandleExceptionAttribute.cs" relfile="VF/CustomAttribute/HandleExceptionAttribute.cs" line="13" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/VF/Controllers/ProfileController.cs" relfile="VF/Controllers/ProfileController.cs" line="277" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="381" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="339" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="275" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="287" column="53" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Controllers/TestAutoMapperController.cs" relfile="Matevo/Controllers/TestAutoMapperController.cs" line="34" column="1" />
-    <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/CustomAttribute/HandleExceptionAttribute.cs" relfile="Matevo/CustomAttribute/HandleExceptionAttribute.cs" line="13" column="1" />
+    <BreakpointStore>
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/VF/CustomAttribute/HandleExceptionAttribute.cs" relfile="VF/CustomAttribute/HandleExceptionAttribute.cs" line="13" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/VF/Controllers/ProfileController.cs" relfile="VF/Controllers/ProfileController.cs" line="277" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="381" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="339" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="275" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Hubs/GameHub.cs" relfile="Matevo/Hubs/GameHub.cs" line="287" column="53" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/Controllers/TestAutoMapperController.cs" relfile="Matevo/Controllers/TestAutoMapperController.cs" line="34" column="1" />
+      <Breakpoint file="/Users/apple/Documents/Freelancer Projects/Backend/vytals-api/Matevo/CustomAttribute/HandleExceptionAttribute.cs" relfile="Matevo/CustomAttribute/HandleExceptionAttribute.cs" line="13" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.Vytals PreferredExecutionTarget="MonoDevelop.Default" />
