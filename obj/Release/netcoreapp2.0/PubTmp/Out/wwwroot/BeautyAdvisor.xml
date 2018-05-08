@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BeautyAdvisor</name>
+    </assembly>
+    <members>
+        <member name="T:BeautyAdvisor.Controllers.AccountController">
+            <summary>
+            This class is used as an api for the search requests 1.
+            </summary>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.AccountController.#ctor(Microsoft.AspNetCore.Identity.UserManager{BeautyAdvisor.Models.ApplicationUser},Microsoft.Extensions.Configuration.IConfiguration,BeautyAdvisor.Providers.IFacebookProvider,Microsoft.Extensions.Options.IOptions{BeautyAdvisor.Options.JwtIssuerOptions},Microsoft.AspNetCore.Identity.SignInManager{BeautyAdvisor.Models.ApplicationUser})">
+            <summary>
+            Contructor
+            </summary>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.AccountController.Login(BeautyAdvisor.Models.BindingModels.LoginModel)">
+            <summary>
+            Login with server
+            </summary>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.AccountController.ExternalLogin(BeautyAdvisor.Models.BindingModels.ExternalLoginModel)">
+            <summary>
+            Login with facebook
+            </summary>
+            <param name="externalLoginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.AccountController.Register(BeautyAdvisor.Models.BindingModels.RegisterModel)">
+            <summary>
+            Register with server
+            </summary>
+            <param name="registerModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BeautyAdvisor.Controllers.BaseController">
+            <summary>
+            Base Controller
+            </summary>
+        </member>
+        <member name="F:BeautyAdvisor.Controllers.BaseController.unitOfWork">
+            <summary>
+            Unit of work instance
+            </summary>
+        </member>
+        <member name="F:BeautyAdvisor.Controllers.BaseController.userManager">
+            <summary>
+            usermanager instance
+            </summary>
+        </member>
+        <member name="F:BeautyAdvisor.Controllers.BaseController.httpContext">
+            <summary>
+            httpContext instance
+            </summary>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.BaseController.#ctor(BeautyAdvisor.Repository.IUnitOfWork,Microsoft.AspNetCore.Identity.UserManager{BeautyAdvisor.Models.ApplicationUser},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Contructor of base controller
+            </summary>
+            <param name="unitOfWork"></param>
+            <param name="userManager"></param>
+        </member>
+        <member name="T:BeautyAdvisor.Controllers.CategoryController">
+            <summary>
+            Category API
+            </summary>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.CategoryController.#ctor(BeautyAdvisor.Repository.IUnitOfWork,Microsoft.AspNetCore.Identity.UserManager{BeautyAdvisor.Models.ApplicationUser},Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Contructor category controller
+            </summary>
+            <param name="unitOfWork"></param>
+            <param name="userManager"></param>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.CategoryController.CreateCategory(BeautyAdvisor.Models.BindingModels.CreateCategoryModel)">
+            <summary>
+            Create category
+            </summary>
+            <param name="createCategoryModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.CategoryController.GetAllCategory">
+            <summary>
+            Get all category
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.CategoryController.CreateSubCategory(BeautyAdvisor.Models.CreateSubCategoryModel)">
+            <summary>
+            Create sub category
+            </summary>
+            <param name="createSubCategoryModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.CategoryController.GetAllSubCategory">
+            <summary>
+            Get all subcategory
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BeautyAdvisor.Controllers.ProductController.CreateProduct(BeautyAdvisor.Models.BindingModels.ProductModel)">
+            <summary>
+            Create new product
+            </summary>
+            <param name="productModel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BeautyAdvisor.Models.Product">
+            <summary>
+            Product model
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.CRUDErrorMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.DeleteFailed">
+            <summary>
+              Looks up a localized string similar to Delete failed.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.InsertFailed">
+            <summary>
+              Looks up a localized string similar to Insert failed.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.ReadFailed">
+            <summary>
+              Looks up a localized string similar to Read failed.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.CRUDErrorMessages.UpdateFailed">
+            <summary>
+              Looks up a localized string similar to Update failed.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.ErrorCodes">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.CateogryIdNotFound">
+            <summary>
+              Looks up a localized string similar to 2000.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.IncorrectPassword">
+            <summary>
+              Looks up a localized string similar to 1001.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.RegisterFailed">
+            <summary>
+              Looks up a localized string similar to 1002.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.UserNotFound">
+            <summary>
+              Looks up a localized string similar to 1003.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ErrorCodes.ValidationError">
+            <summary>
+              Looks up a localized string similar to 1111.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.ExternalProvider">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ExternalProvider.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ExternalProvider.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ExternalProvider.Facebook">
+            <summary>
+              Looks up a localized string similar to Facebook.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.ExternalProvider.Google">
+            <summary>
+              Looks up a localized string similar to Google.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.FailureModelValidationMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.ConfirmedPasswordNotMatchForPassword">
+            <summary>
+              Looks up a localized string similar to Confirmed password does not match for password.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.InvalidConfirmedPassword">
+            <summary>
+              Looks up a localized string similar to Invalid confirmed password.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.InvalidEmail">
+            <summary>
+              Looks up a localized string similar to Email is invalid.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.InvalidPassword">
+            <summary>
+              Looks up a localized string similar to Password is invalid.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyAccessToken">
+            <summary>
+              Looks up a localized string similar to Access token could not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyCategoryId">
+            <summary>
+              Looks up a localized string similar to Category Id can not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyCategoryName">
+            <summary>
+              Looks up a localized string similar to Category name can not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyConfirmedPassword">
+            <summary>
+              Looks up a localized string similar to Confirmed password could not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyEmail">
+            <summary>
+              Looks up a localized string similar to Email shoud not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyPassword">
+            <summary>
+              Looks up a localized string similar to Password could not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyProductDescription">
+            <summary>
+              Looks up a localized string similar to Product description can not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyProductImageUrl">
+            <summary>
+              Looks up a localized string similar to Product image can not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyProductName">
+            <summary>
+              Looks up a localized string similar to Product name can not be null or empty.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureModelValidationMessages.NullEmptyProvider">
+            <summary>
+              Looks up a localized string similar to Provider could not be null or empty.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.FailureReturnMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.CateogryIdNotExits">
+            <summary>
+              Looks up a localized string similar to Category Id is not correct..
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.GetFacebookInfoFailed">
+            <summary>
+              Looks up a localized string similar to Get user facebook info not sucessfully..
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.IncorrectPassword">
+            <summary>
+              Looks up a localized string similar to Incorrect password.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.InvalidFacebookToken">
+            <summary>
+              Looks up a localized string similar to Invalid facebook token.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.RegisterFailed">
+            <summary>
+              Looks up a localized string similar to Register user failed.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.FailureReturnMessages.UserNotFound">
+            <summary>
+              Looks up a localized string similar to User not found.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.Roles">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Roles.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Roles.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Roles.User">
+            <summary>
+              Looks up a localized string similar to User.
+            </summary>
+        </member>
+        <member name="T:BeautyAdvisor.Resources.Separators">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Separators.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Separators.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Separators.Colon">
+            <summary>
+              Looks up a localized string similar to :.
+            </summary>
+        </member>
+        <member name="P:BeautyAdvisor.Resources.Separators.Comma">
+            <summary>
+              Looks up a localized string similar to ,.
+            </summary>
+        </member>
+    </members>
+</doc>

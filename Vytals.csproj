@@ -1,0 +1,171 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <OutputTypeEx>Exe</OutputTypeEx>
+    <StartupObject />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile></DocumentationFile>
+    <OutputPath>bin\</OutputPath>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BeautyAdvisor.xml" />
+    <None Remove="Properties\PublishProfiles\beauty-advisor - Web Deploy.pubxml" />
+    <None Remove="Properties\PublishProfiles\beauty-advisor-staging - Web Deploy.pubxml" />
+    <None Remove="SwaggerAuthen\basic-auth.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\auth.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="wwwroot\auth.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="SwaggerAuthen\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\ReutrnModels\" />
+    <Folder Include="Services\QuestionStores\" />
+    <Folder Include="Services\Math\" />
+    <Folder Include="Infrastructures\Mappings\" />
+    <Folder Include="Models\DTOModels\" />
+    <Folder Include="Services\QuestionStores\AdditionMathQuestions\" />
+    <Folder Include="Services\QuestionStores\MultiplicaitonQuestions\" />
+    <Folder Include="Services\QuestionStores\DivisionQuestions\" />
+    <Folder Include="Services\QuestionStores\SubtractionQuestions\" />
+    <Folder Include="Services\Grandes\" />
+    <Folder Include="Services\Grandes\AdditionMathGrandeQuestions\" />
+    <Folder Include="Services\Grandes\DivisionMathGrandeQuestions\" />
+    <Folder Include="Services\Grandes\MultiplicaitonMathGrandeQuestions\" />
+    <Folder Include="Services\Grandes\SubtractionMathGrandeQuestions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="2.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.0" />
+  <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.ViewCompilation" Version="2.0.0" PrivateAssets="All" />
+  <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.0" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.0" PrivateAssets="All" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.0" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.0" PrivateAssets="All" />
+  <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.0" />
+  <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" PrivateAssets="All" />
+    
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="2.0.1" />  
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Server" Version="0.2.0-preview2-22683" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="1.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="1.1.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
+		<PackageReference Include="System.Security.Cryptography.OpenSsl" Version="4.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="1.0.0-rc3" />
+    <PackageReference Include="System.Net.Http" Version="4.3.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.0.1" />
+    <PackageReference Include="AutoMapper" Version="6.2.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Account.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Account.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\CRUDErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CRUDErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ExternalProvider.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ExternalProvider.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Roles.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Roles.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Separators.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Separators.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ValidationModel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ValidationModel.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\ValidationModel.da.Designer.cs">
+      <DependentUpon>ValidationModel.da.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Account.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Account.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\CRUDErrorMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>CRUDErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ExternalProvider.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ExternalProvider.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Account.vi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Account.vi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Roles.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Roles.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Separators.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Separators.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ValidationModel.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ValidationModel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ValidationModel.vi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Condition=" '$(EnableDefaultEmbeddedResourceItems)' == 'true' " Update="Resources\ValidationModel.da.resx">
+      <LastGenOutput>ValidationModel.da.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="HtmlPages\Email.html">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <DotNetNamingPolicy ResourceNamePolicy="FileFormatDefault" DirectoryNamespaceAssociation="PrefixedHierarchical" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>
